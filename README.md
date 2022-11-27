@@ -14,4 +14,4 @@ Learning new functions using CSS  has been my new learning and a major leap from
 I learned to see the issue of homelessness from an entirely new perspective and realized how the treatment of the affected can be improved.
 # What's next for Cozi
 More locations will be added and ultimately the website will be spread as much to help those affected by homelessness and spread awareness about the same.
-Made by Chetan Tyagi
+Made by Chetan Tyagi.
