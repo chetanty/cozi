@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Cozi </title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <link href="cxd.png" rel="icon">
+  <link href="cxd.png" rel="kicon">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+    .center {
+      margin: auto;
+      width: 60%;
+
+      padding: 10px;
+    }
+    </style>
+
+</head>
+
+<body style="background-color:whitesmoke;">
+
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-lg-between">
+
+      <h1 class="logo me-auto me-lg-0"><a href="index.html">Cozi<span>.</span></a></h1>
+      <img src="mlh.png" alt="mlh_logo" width="100" height="10" align="left">
+
+
+
+
+    </div>
+  </header>
+
+  <section id="hero" class="d-flex align-items-center justify-content-center">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+        <div class="col-xl-6 col-lg-8">
+          <h1>Cozi<span>.</span></h1>
+          <h2>Wear for the current weather.</h2>
+        </div>
+      </div>
+
+      <div class="row gy-4 mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="2000000">
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box">
+            <i class="bi bi-brightness-alt-high-fill"></i>
+            <h3><a href="https://chetanty.github.io/">Made by Chetan Tyagi</a></h3>
+          </div>
+        </div>
+
+        
+      </div>
+
+    </div>
+  </section>
+  <hr style="color:black; width:100%;text-align:left;margin-left:0">
+  <section class="top-banner" >
+    <div class="center">
+    <div class="container">
+      <h1 class="heading">Check the Temperature Here</h1>
+      <form>
+        <h2><input type="text" placeholder="Search for a city" autofocus></h2>
+        <h3><button type="submit" ; return false"">SUBMIT</button></h3>
+        <span class="msg"></span>
+      </form>
+    </div>
+  </section>
+  <section class="ajax-section">
+    <div class="container">
+      <ul class="cities"></ul>
+    </div></div>
+    <hr style="color:black; width:100%;text-align:left;margin-left:0">
+
+  </section>
+  <section class="top-banner">
+    <div class="center">
+    <h1 class="heading">Enter the temperature in Celsius</h1>
+    <form>
+    <h2><input type="number" placeholder="Enter a value" autofocus id="text_a"  /></h2> <button onclick="myFunction(); return false"">SUBMIT</button></form>
+    <p id="answer" style="font-family:monospace; font-size: 25px; "></p>
+    
+
+    
+    <script>
+    function myFunction()
+    {
+    var a=document.getElementById("text_a").value;
+
+    if (a>60 )
+      {
+    document.getElementById("answer").innerHTML="<br />"+"<br />"+"Space Suit"+"<br />";
+
+      }
+
+    else if (a>21 && 60>a)
+      {
+    document.getElementById("answer").innerHTML="<br />"+"<br />"+"Base Layer- T-Shirt and Shorts"+"<br />";
+
+      }
+    else if (22>a && 12<a) 
+      {
+    document.getElementById("answer").innerHTML="<br />"+"<br />"+"Base Layer- Shirt and Jeans"+"<br />"+"<br />"+"Mid Later- Hoodie or Thin Jacket ";;
+      }
+      
+    else if (13>a && 0<a) 
+      {
+    document.getElementById("answer").innerHTML="<br />"+"<br />"+"Base Layer- Shirt- and Shorts"+"<br />"+"<br />"+"Mid Later- Hoodie, Sweaters, Leather jackets or Parkas";
+      }
+    else if (1>a && -10<a) 
+      {
+    document.getElementById("answer").innerHTML="<br />"+"<br />"+"Base Layer- Shirt and Shorts"+"<br />"+"<br />"+"Mid Later- Hoodie, Sweaters, Leather jackets or Parkas"+"<br />"+"<br />"+"Outer Layer- Double-layered hooded down jackets (Preferably waterproof)"+"<br />"+"<br />"+"Accessories- Beanies, Ear Muffs, Scarves, Thick Socks, Waterproof winter boots";
+      }
+    else if (-11>a && a>-100) 
+      {
+    document.getElementById("answer").innerHTML="<br />"+"<br />"+"Base Layer- Shirt and Shorts"+"<br />"+"<br />"+"Mid Later- Hoodie, Sweaters, Leather jackets or Parkas"+"<br />"+"<br />"+"Outer Layer- Thicker Double-layered hooded down jackets made for the temperature"+"<br />"+"<br />"+"Accessories- Beanies, Ear Muffs, Scarves, Thick Socks, Waterproof winter boots, Scarves";
+      }
+      else if (a<-101)
+      {
+    document.getElementById("answer").innerHTML="<br />"+"<br />"+"Space Suit"+"<br />";
+
+      }
+    else
+      {
+    document.getElementById("answer").innerHTML="There was an error processing the answer. Please try again.";
+      }
+    }
+    </script>
+    </div>
+    </section>
+    <hr style="color:black; width:100%;text-align:left;margin-left:0">
+
+
+
+
+    <section>
+      <h1 style="color:#444444">Fahrenheit to Celsius Conversion Notes</h1>
+      <h1 style="color: whitesmoke"> .</h1>
+    <img src="z.jpg" alt="Fahrenheit to Celsius One" align="left">
+    <img src="k.jpeg" alt="Fahrenheit to Celsius Two" align="right">
+  </section>
+  <hr style="color:black; width:100%;text-align:left;margin-left:0">
+
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+            <img src="wpc.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
+            <h3 style="color:#444444;">Got the perfect clothes for the weather? Sadly, many don't.</h3>
+            <p class="fst-italic" style="color:#444444;">
+              For most of us, winter means holidays, family gatherings, and gift-giving.
+
+But for people experiencing homelessness, winter is a brutal challenge. The cold weather makes life on the street even more dangerous than usual, and the societal focus on togetherness and holiday cheer can create a sense of even greater isolation. There are many services available to help people get out of the cold including people who are experiencing homelessness:
+
+
+            </p>
+            <ul>
+              <li style="color:#444444;"><i class="ri-check-double-line" style="color:#FC6A03;"></i> Emergency sleeping spaces in the shelters specialized for the same.
+                </li>
+              <li style="color:#444444;"><i class="ri-check-double-line" style="color:#FC6A03;"></i> Street outreach services to encourage homeless people to come in from the cold.</li>
+              <li style="color:#444444;"><i class="ri-check-double-line" style="color:#FC6A03;"></i> Provision of emergency transportation and other services by government and non-profit organizations.</li>
+            </ul>
+            <p style="color:#444444;">
+              Many organizations have taken initiatives to battle the problem, and with your support, the scale can be much bigger.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+    <hr style="color:black; width:100%;text-align:left;margin-left:0">
+
+    <section id="testimonials" class="testimonials">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="oc.jpg" class="testimonial-img" alt="">
+                <h3>One Warm Coat</h3>
+                <h4><a href="https://www.onewarmcoat.org/">Learn More</a></h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  One Warm Coat’s mission is to provide free coats to children and adults in need while promoting volunteerism and environmental sustainability.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="rn.jpg" class="testimonial-img" alt="">
+                <h3>Ratna Nidhi Charitable Trust</h3>
+                <h4><a href="https://ratnanidhi.org/project/Donate-warm-woollen-clothes-to-underprivileged">Learn More</a></h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  It is that time of the year where winter is a curse on northern India’s underprivileged people. Survival is difficult for the poor, but winter creates additional burden on them.  It is a desperate struggle for the homeless and poor to survive the winter season. This winter, charity blankets donations will help us to provide warm clothes to homeless. We at Ratna Nadhi are encouraging individuals to donate woollen clothes. These donated warm clothes and blankets will be further distributed to homeless and underprivileged people in our society.                   
+                                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="ch.jpg" class="testimonial-img" alt="">
+                <h3>Canada Helps</h3>
+                <h4><a href="https://www.canadahelps.org/en/charities/canadian-unicef-committee/campaign/winter-clothing/">Learn More</a></h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Children need protected from the cold. This gift provides jackets, trousers, fleeces, boots or strong shoes, a scarf and a hat for at-risk children help maintain warmth and health in winter. We aim to provide emergency relief in the crisis.                  
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="ow.jpg" class="testimonial-img" alt="">
+                <h3>Operation Warm</h3>
+                <h4><a href="https://www.operationwarm.org/">Learn More</a></h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Providing warmth, confidence, and hope through basic need programs that connect underserved kids to community resources needed to thrive.                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section>
+    <hr style="color:black; width:100%;text-align:left;margin-left:0">
+
+    <section>
+      <h1 style="color:#444444;">The Map for Assistance</h1>
+      <h4 style="color:#444444;">I have compiled a list of 40+ locations that provide help to homeless in North America using Google Map Embed API. Please check them out for getting help or contributing to the cause alike.</h4>
+      <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1r2hXatF7kP8ZYi_xIB7H3i7tm7q2tG4&ehbc=2E312F" width="1640" height="480"></iframe>    </section>
+    <hr style="color:black; width:100%;text-align:left;margin-left:0">
+
+    <section><img src="cx.png" alt="Footrt_i">
+    </section>
+      <div class="footer">
+    <div id="button"></div>
+  <div id="containerh">
+  <div id="cont">
+  <div class="footer_center">
+       <h3>Made by Chetan Tyagi for Give Back Hacks 3.0</h3>
+  </div>
+  </div>
+  </div>
+  </div>
+
+  <div class="footer">
+      <div id="button"></div>
+    <div id="containerh">
+    <div id="cont">
+    <div class="footer_center">
+         <h3 style="font-family:monospace ">Made by Chetan Tyagi for Give Back Hacks 3.0. Feel free to mail me at : ctyagy06@gmail.com</h3>
+
+
+         
+    </div>
+    </div>
+    </div>
+    </div>
+  
+  </main>
+
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html> 
