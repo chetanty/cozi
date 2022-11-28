@@ -1,4 +1,4 @@
-# Highliights
+# Highlights
 2nd place- Winner of Give Back Hacks 3.0, organized by MLH.
 # Live on https://chetanty.github.io/cozi/
 # What it does
