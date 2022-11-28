@@ -1,6 +1,6 @@
 # Highliights
 2nd place- Winner of Give Back Hacks 3.0, organized by MLH.
-#Live on https://chetanty.github.io/cozi/
+# Live on https://chetanty.github.io/cozi/
 # What it does
 The application has several features for two major categories of users. Using OpenWeatherMap API, the user can know what clothes to wear based on the temperature outside, to be better prepared for the environment.
 The most important feature is for those affected by homelessness. The website includes a detailed description of the issue, information about the major organization working towards the issue, and the locations where the needy can get help from.
